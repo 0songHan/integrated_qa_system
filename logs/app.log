@@ -1,0 +1,2 @@
+2026-02-05 11:09:54,662 - EduRAG - ERROR - MySQL 连接失败：(1698, "Access denied for user 'root'@'localhost'")
+2026-02-05 11:13:22,357 - EduRAG - INFO - MySQL 连接成功

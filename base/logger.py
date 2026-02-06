@@ -1,6 +1,6 @@
 import logging
 import os
-from config import Config
+from .config import Config
 
 def setup_logger(log_file=Config().LOG_FILE):
     os.makedirs(os.path.dirname(log_file),exist_ok=True)

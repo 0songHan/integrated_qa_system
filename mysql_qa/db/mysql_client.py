@@ -1,7 +1,7 @@
 
 import pymysql
 import pandas as pd
-from base.config import Config
+from base import Config
 from base.logger import logger
 
 
@@ -14,9 +14,9 @@ class MySQLClient:
                 user=Config().MYSQL_USER,
                 database=Config().MYSQL_DATABASE
             )
-            self.cursor = self.connect.cursor()
+            self.cursor = self.connection.cursor()
             self.logger.info('MySQL 连接成功')
-        except pymysql.MySQLErrot as e:
+        except pymysql.MySQLError as e:
             self.logger.error(f'MySQL 连接失败：{e}')
             raise
 

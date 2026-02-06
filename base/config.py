@@ -7,9 +7,7 @@ class Config:
         self.config.read(config_file)
 
         self.MYSQL_HOST = self.config.get('mysql','host',fallback='localhost')
-        self.MYSQL_USER = self.config.get('mysql', 'user', fallback='root')
-        # MySQL 密码
-        self.MYSQL_PASSWORD = self.config.get('mysql', 'password') 
+        self.MYSQL_USER = self.config.get('mysql', 'user', fallback='hcs')
         # MySQL 数据库名
         self.MYSQL_DATABASE = self.config.get('mysql', 'database', fallback='subjects_kg')  
 
