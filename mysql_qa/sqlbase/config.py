@@ -9,7 +9,7 @@ class Config:
         self.MYSQL_HOST = self.config.get('mysql','host',fallback='localhost')
         self.MYSQL_USER = self.config.get('mysql', 'user', fallback='hcs')
         # MySQL 数据库名
-        self.MYSQL_DATABASE = self.config.get('mysql', 'database', fallback='subjects_kg')  
+        self.MYSQL_DATABASE = self.config.get('mysql', 'database', fallback='rag_demo')  
 
         # Redis 配置
         # Redis 主机地址
